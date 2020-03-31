@@ -4,7 +4,8 @@ function findMatching(array, string) {
 }
 
 function fuzzyMatch(array, string) {
-    return array.filter(element => element.charAt(0) === string.charAt(0))
+    let stringLength = string.length
+    return array.filter(element => element.slice(0, stringLength) === string)
 }
 
 function matchName(array, string) {

@@ -6,10 +6,10 @@ function findMatching(array, driver){
 }
 
 function fuzzyMatch(array, driver){
-    return array.filter(m => m[0] === driver.[0])
+    return array.filter(m => m[0] === driver[0])
 
 }
 
-// function matchName( array, driver){
-//     return array.filter(m => m.name === driver)
-// }
+function matchName( array, driver){
+    return array.filter(m => m.name === driver)
+}

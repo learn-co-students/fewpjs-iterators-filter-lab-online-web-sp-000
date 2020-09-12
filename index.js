@@ -18,6 +18,8 @@ function fuzzyMatch(drivers, names) {
 }
 
 function matchName(drivers, word) {
+  //function takes array of drivers and word as arguments
   let person = drivers.filter((human) => human.name === word);
+  // each person(element) has a property of name and returns whose name matches word (string argument)
   return person;
 }

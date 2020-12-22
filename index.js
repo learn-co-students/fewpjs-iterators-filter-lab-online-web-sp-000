@@ -26,3 +26,18 @@ const fuzzyMatch = (drivers, letters) => {
   })
   return matchedLetters
 }
+
+/* 
+matchName()
+         accesses the data structure to check if name matches:
+     ReferenceError: matchName is not defined
+*/
+const matchName = (drivers, name) => {
+  let matchedDrivers = drivers.filter(driver => {
+    return driver.name === name
+  })
+  return matchedDrivers
+}
+
+
+

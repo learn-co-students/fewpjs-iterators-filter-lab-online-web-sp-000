@@ -1,10 +1,10 @@
 // Code your solution here
 function findMatching(drivers, name) {
-  return drivers.filter(driverName => {
-    // return all dirvers that match the passed in name
+  return drivers.filter(driver => {
+    // return all drivers that match the passed in name
     // return matching drivers even if case does not match
     // return an empty array if there is no match
-    return driverName.toLowerCase() === name.toLowerCase();
+    return driver.toLowerCase() === name.toLowerCase();
   });
 }
 

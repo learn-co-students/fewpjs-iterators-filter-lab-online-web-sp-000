@@ -1,18 +1,18 @@
-function findMatching(arr, str) {
-	return arr.filter(objName => {
+function findMatching(drivers, str) {
+	return drivers.filter(objName => {
 		return objName.toLowerCase() == str.toLowerCase();
 	})
 }
 
-function fuzzyMatch (arr, letters) {
+function fuzzyMatch (drivers, letters) {
 	let length = letters.length;
-	return arr.filter(objName => {
+	return drivers.filter(objName => {
 		return objName.slice(0, length) === letters;
 	});
 }
 
-function matchName (arr, name) {
-	return arr.filter(driver => {
+function matchName (drivers, name) {
+	return drivers.filter(driver => {
 		return driver.name.toLowerCase() === name.toLowerCase();
 	})
 }

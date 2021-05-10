@@ -14,7 +14,8 @@ function fuzzyMatch(drivers, str) {
 }
 
 function matchName(drivers, name) {
+  name = name.toLowerCase()
   return drivers.filter( obj => {
-    if (obj.name === name) return name;
+    if (obj.name.toLowerCase() === name) return obj.name;
   })
 }
